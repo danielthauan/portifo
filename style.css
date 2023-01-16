@@ -337,7 +337,9 @@ header {
 .projetos {
   display: flex;
   justify-content: space-evenly;
-
+  align-items: center;
+  height: 85vh;
+  width: 100%;
 }
 
 .card {
@@ -655,4 +657,28 @@ footer {
   color: #fff;
   border-radius: .3rem;
   box-shadow: 0 0.1rem 0.6rem #000000;
+}
+
+.pulse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+}
+
+.pulse:hover {
+  animation: toTop .7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes toTop {
+  25% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
 }
